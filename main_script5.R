@@ -86,7 +86,7 @@ saveRDS(results_125, file.path(output_dir, "data_50_4_2.rds"))
 
 
 # Combine all results into one table
-results <- rbind(results_150, results_175)
+results <- rbind(results_100, results_125)
 
 # Format output
 results_out <- data.frame(
