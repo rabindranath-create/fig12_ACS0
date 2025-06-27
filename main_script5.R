@@ -40,7 +40,7 @@ results_100 <- data.frame(
 for (i in 1:100) {
   set.seed(400+i)
   obs_gen_para <- c(gamma = 0.3, d = 5, noPoints = 100)
-  result <- ACS_Alg_C(obs_gen_para, k = 0, lambda)
+  result <- ACS_Alg_C(obs_gen_para, kei = 0, lambda)
   
   results_100[i, ] <- list(
     Run = i,
@@ -70,7 +70,7 @@ results_125 <- data.frame(
 for (i in 1:100) {
   set.seed(400+i)
   obs_gen_para <- c(gamma = 0.3, d = 5, noPoints = 125)
-  result <- ACS_Alg_C(obs_gen_para, k = 0, lambda)
+  result <- ACS_Alg_C(obs_gen_para, kei = 0, lambda)
   
   results_125[i, ] <- list(
     Run = i,
